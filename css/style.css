@@ -444,3 +444,130 @@ a {
 .point-info p {
   margin: 0 0 1rem;
 }
+
+/* ---------- Внутренние страницы ---------- */
+.page {
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+}
+
+.page-title {
+  margin: 0 0 1.5rem;
+  font-size: 2.25rem;
+}
+
+.page-lead {
+  max-width: 44rem;
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+.block-title {
+  margin: 2rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* ---------- Хлебные крошки ---------- */
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: .9rem;
+  color: var(--muted);
+  list-style: none;
+}
+
+.breadcrumbs-list li + li::before {
+  content: '/';
+  margin-right: .5rem;
+}
+
+/* ---------- Страница модели ---------- */
+.bike-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: start;
+  gap: 3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery-main {
+  grid-column: 1 / -1;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.gallery figcaption {
+  margin-top: .4rem;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.bike-price {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.bike-price b {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.specs {
+  margin: 0;
+}
+
+.spec {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.spec dt {
+  color: var(--muted);
+}
+
+.spec dd {
+  margin: 0;
+  font-weight: 500;
+  text-align: right;
+}
+
+.included {
+  margin: 0 0 2rem;
+  padding-left: 1.25rem;
+}
+
+.helmet {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+}
+
+.helmet-image {
+  border-radius: var(--radius);
+}

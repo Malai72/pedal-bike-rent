@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Городской велосипед «Урбан» в прокате «Педаль»: характеристики, цены и бронирование.">
+  <title>Городской велосипед «Урбан» — Педаль</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&amp;family=Unbounded:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Педаль — на главную">
+        <svg class="logo-wheel" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="20" cy="20" r="3" fill="currentColor"/>
+          <path d="M20 3v34M3 20h34M8 8l24 24M32 8L8 32" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span class="logo-text">Педаль</span>
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Главная</a></li>
+          <li><a class="nav-link" href="index.html#catalog">Каталог</a></li>
+          <li><a class="nav-link" href="bike.html" aria-current="page">Модель «Урбан»</a></li>
+          <li><a class="nav-link nav-link-accent" href="booking.html">Забронировать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs-list">
+        <li><a class="text-link" href="index.html">Главная</a></li>
+        <li><a class="text-link" href="index.html#catalog">Каталог</a></li>
+        <li aria-current="page">Городской «Урбан»</li>
+      </ol>
+    </nav>
+
+    <h1 class="page-title">Городской велосипед «Урбан»</h1>
+
+    <div class="bike-layout">
+      <section class="gallery" aria-label="Фотографии велосипеда">
+        <figure class="gallery-main">
+          <img src="images/city-1.jpg" alt="Мятный велосипед «Урбан» у входа в дом" width="1200" height="900">
+          <figcaption>«Урбан» — лёгкая алюминиевая рама и низкая посадка.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/city-2.jpg" alt="Кожаное седло и плетёная корзина велосипеда крупным планом" width="1200" height="900" loading="lazy">
+          <figcaption>Мягкое седло и корзина до 5 кг.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/city-3.jpg" alt="Городские велосипеды у парковки на улице" width="1200" height="900" loading="lazy">
+          <figcaption>Парковка у каждого входа в парк.</figcaption>
+        </figure>
+      </section>
+
+      <section class="bike-info" aria-labelledby="specs-title">
+        <p class="bike-price">от <b>250 ₽</b> в час</p>
+        <p>Самый популярный велосипед проката: удобен для прогулок по набережным и паркам, подходит людям ростом от 155 до 190 см.</p>
+
+        <h2 class="block-title" id="specs-title">Характеристики</h2>
+        <dl class="specs">
+          <div class="spec"><dt>Рама</dt><dd>алюминий, размер M</dd></div>
+          <div class="spec"><dt>Колёса</dt><dd>28 дюймов</dd></div>
+          <div class="spec"><dt>Скорости</dt><dd>7, планетарная втулка</dd></div>
+          <div class="spec"><dt>Тормоза</dt><dd>ободные + ножной</dd></div>
+          <div class="spec"><dt>Вес</dt><dd>14 кг</dd></div>
+          <div class="spec"><dt>Рост велосипедиста</dt><dd>155–190 см</dd></div>
+        </dl>
+
+        <h2 class="block-title">Что входит в прокат</h2>
+        <ul class="included">
+          <li>Шлем вашего размера</li>
+          <li>Тросовый замок с кодом</li>
+          <li>Фляга с водой</li>
+          <li>Карта велодорожек парка</li>
+        </ul>
+
+        <a class="button button-accent" href="booking.html">Забронировать «Урбан»</a>
+      </section>
+    </div>
+
+    <section class="helmet" aria-labelledby="helmet-title">
+      <img class="helmet-image" src="images/helmet.jpg" alt="Синий велосипедный шлем и фляга на скамейке" width="800" height="600" loading="lazy">
+      <div>
+        <h2 class="block-title" id="helmet-title">Безопасность прежде всего</h2>
+        <p>Перед выдачей механик проверяет тормоза, давление в шинах и цепь. Шлем подбираем по размеру и выдаём бесплатно — без шлема на электровелосипеды и шоссейные модели не выпускаем.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <p class="footer-logo">Педаль</p>
+        <p class="footer-text">Прокат велосипедов у парка Горького. Взрослые, детские и электровелосипеды — с шлемом и замком без доплаты.</p>
+      </div>
+      <nav class="footer-col" aria-label="Ссылки в подвале">
+        <h2 class="footer-title">Сайт</h2>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="index.html">Главная</a></li>
+          <li><a class="footer-link" href="index.html#catalog">Каталог</a></li>
+          <li><a class="footer-link" href="bike.html">Модель «Урбан»</a></li>
+          <li><a class="footer-link" href="booking.html">Бронирование</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-title">Контакты</h2>
+        <address class="footer-address">
+          Москва, ул. Крымский Вал, 9<br>
+          <a class="footer-link" href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+          <a class="footer-link" href="mailto:hello@pedal-rent.ru">hello@pedal-rent.ru</a><br>
+          Ежедневно с 9:00 до 22:00
+        </address>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Велопрокат «Педаль». Учебный проект.</p>
+  </footer>
+</body>
+</html>
