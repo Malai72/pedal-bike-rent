@@ -282,3 +282,165 @@ a {
   color: #a9b8ae;
   border-top: 1px solid rgba(255, 255, 255, .12);
 }
+
+/* ---------- Преимущества ---------- */
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage {
+  padding: 2rem 1.75rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.advantage-icon {
+  color: var(--green);
+}
+
+.advantage-title {
+  margin: 1rem 0 .5rem;
+  font-size: 1.1rem;
+}
+
+.advantage-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---------- Каталог: сетка карточек ---------- */
+.catalog {
+  background-color: var(--white);
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bike-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg);
+  border-radius: var(--radius);
+}
+
+.bike-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.bike-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.bike-card-title {
+  font-size: 1.15rem;
+}
+
+.bike-card-text {
+  flex: 1;
+  margin: .5rem 0 1rem;
+  color: var(--muted);
+}
+
+.bike-card-price {
+  margin: 0 0 1rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--green);
+}
+
+/* ---------- Тарифы ---------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.tariffs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: var(--radius);
+}
+
+.tariffs-table caption {
+  margin-bottom: .75rem;
+  text-align: left;
+  color: var(--muted);
+}
+
+.tariffs-table th,
+.tariffs-table td {
+  padding: .9rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.tariffs-table thead th {
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.tariffs-table tbody th {
+  font-weight: 500;
+}
+
+/* ---------- Маршруты ---------- */
+.routes {
+  background-color: var(--white);
+}
+
+.routes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.route {
+  margin: 0;
+}
+
+.route img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.route figcaption {
+  margin-top: .75rem;
+}
+
+/* ---------- Пункт проката ---------- */
+.point-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.point-image {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.point-info p {
+  margin: 0 0 1rem;
+}
