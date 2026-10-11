@@ -749,3 +749,127 @@ a {
   border-radius: var(--radius);
   background-color: #000;
 }
+
+/* ==========================================================================
+   Адаптивная вёрстка: три контрольные точки — 1280px, 900px и 600px
+   ========================================================================== */
+
+/* Ноутбук: до 1280px */
+@media (max-width: 1280px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .catalog-grid {
+    gap: 1.25rem;
+  }
+
+  .bike-layout,
+  .booking-layout {
+    gap: 2rem;
+  }
+}
+
+/* Планшет: до 900px — каталог в две колонки, блоки друг под другом */
+@media (max-width: 900px) {
+  .hero {
+    padding: 5rem 0 4rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantage {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .video-inner,
+  .point-inner,
+  .bike-layout,
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .helmet {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Телефон: до 600px — всё в одну колонку, меню под логотипом */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .nav-list {
+    gap: .5rem 1.1rem;
+    font-size: .95rem;
+  }
+
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .advantages-list,
+  .catalog-grid,
+  .routes-grid,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group,
+  .helmet,
+  .thanks-card {
+    padding: 1.25rem;
+  }
+
+  .form-buttons .button {
+    width: 100%;
+  }
+}
