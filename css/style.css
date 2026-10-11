@@ -913,3 +913,151 @@ video:focus-visible {
     --line: #6b7a70;
   }
 }
+
+/* ==========================================================================
+   Анимации
+   ========================================================================== */
+
+/* Плавное появление первого экрана снизу вверх */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-title,
+.hero-text,
+.hero-buttons,
+.hero-facts {
+  animation: fade-in-up .8s ease both;
+}
+
+.hero-text {
+  animation-delay: .15s;
+}
+
+.hero-buttons {
+  animation-delay: .3s;
+}
+
+.hero-facts {
+  animation-delay: .45s;
+}
+
+/* Колесо в логотипе прокручивается при наведении */
+.logo-wheel {
+  transition: transform .8s ease;
+}
+
+.logo:hover .logo-wheel {
+  transform: rotate(360deg);
+}
+
+/* Кнопки и ссылки меняют цвет плавно */
+.button,
+.nav-link,
+.footer-link {
+  transition: background-color .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:not(.button-accent):not(.button-light):not(.button-outline):hover {
+  background-color: var(--green-dark);
+  border-color: var(--green-dark);
+}
+
+.button-accent:hover {
+  background-color: #ffb703;
+  border-color: #ffb703;
+}
+
+.button-outline:hover {
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+.nav-link-accent:hover {
+  color: var(--ink);
+  background-color: #ffb703;
+}
+
+.footer-link:hover {
+  color: var(--yellow);
+}
+
+/* Карточка каталога приподнимается, фото слегка увеличивается */
+.bike-card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.bike-card-image {
+  transition: transform .5s ease;
+}
+
+.bike-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-6px);
+}
+
+.bike-card:hover .bike-card-image {
+  transform: scale(1.06);
+}
+
+/* Галочка на странице «Спасибо» рисуется линией */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(.4);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.thanks-icon {
+  animation: pop-in .5s cubic-bezier(.34, 1.56, .64, 1) both;
+}
+
+.thanks-circle {
+  stroke-dasharray: 277;
+  stroke-dashoffset: 277;
+  animation: draw .8s ease .2s forwards;
+}
+
+.thanks-check {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: draw .5s ease .9s forwards;
+}
+
+/* Если в системе включено «уменьшить движение» — анимации отключаются */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: .01ms !important;
+  }
+}
