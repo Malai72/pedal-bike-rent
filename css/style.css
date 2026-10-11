@@ -571,3 +571,157 @@ a {
 .helmet-image {
   border-radius: var(--radius);
 }
+
+/* ---------- Форма бронирования ---------- */
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: start;
+  gap: 3rem;
+}
+
+.form-group {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem 1.75rem;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.form-legend {
+  padding: 0 .5rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+}
+
+.form-subgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-label {
+  display: block;
+  margin: 1rem 0 .35rem;
+  padding: 0;
+  font-weight: 600;
+}
+
+.required {
+  color: #b3261e;
+}
+
+.form-input {
+  width: 100%;
+  min-height: 3rem;
+  padding: .6rem .9rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background-color: var(--white);
+  border: 1.5px solid #b9c6bd;
+  border-radius: .5rem;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-hint {
+  margin: .3rem 0 0;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-field {
+  flex: 1;
+}
+
+.choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  margin: .5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.choice-list li,
+.consent {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.choice-list input,
+.consent input {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--green);
+}
+
+.consent {
+  margin: 0 0 1.5rem;
+}
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Неверно заполненное поле подсвечивается, когда пользователь ушёл из него */
+.form-input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #b3261e;
+}
+
+.booking-image {
+  border-radius: var(--radius);
+}
+
+.steps {
+  margin: 1.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.steps li {
+  margin-bottom: .5rem;
+}
+
+/* ---------- Страница «Спасибо» ---------- */
+.thanks {
+  display: flex;
+  justify-content: center;
+}
+
+.thanks-card {
+  max-width: 34rem;
+  margin: 2rem 0;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.thanks-icon {
+  margin: 0 auto 1.5rem;
+}
+
+.thanks-circle {
+  stroke: var(--green);
+}
+
+.thanks-check {
+  stroke: var(--green);
+}
+
+.thanks-card .hero-buttons {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
